@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="codigo.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_links" href="index.html">HOME</a>
+            <a class="cabecalho_menu_links" href="about.html">CANDIDATOS</a>
+            <a class="cabecalho_menu_links" href="resultado.html">RESULTADO</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="apresentacao_conteudo_titulo">SEU VOTO PARA</h1>
+            <h2 class="apresentacao_conteudo_subtitulo">MELHOR CANTOR(A) DA BAHIA</h2> 
+            <div class="apresentacao_numeros">
+                <form action="">
+                    <input class="apresentacao_numeros_entrada" size="1" id="campo1" value="" maxlength="1" type="text" readonly="readonly"/>
+                    <input class="apresentacao_numeros_entrada" size="1" id="campo2" value="" maxlength="1" type="text" readonly="readonly"/>
+                </form>
+            </div>
+            <p class="apresentacao_conteudo_texto" id="nome">Nome:</p>
+            <p class="apresentacao_conteudo_texto" id="genero">Gênero musical:</p>
+            <img id="minha-img" src="#" alt="foto do cantor">
+            <p class="apresentacao_conteudo_texto">Aperte a tecla: <br> CONFIRMA para CONFIRMAR este voto <br> CORRIGE para REINICIAR este voto</p>
+        </section>
+
+        <div class="teclado">
+            <button class="btn_click" onclick="inserir(1)">1</button>
+            <button class="btn_click" onclick="inserir(2)">2</button>
+            <button class="btn_click" onclick="inserir(3)">3</button>
+            <button class="btn_click" onclick="inserir(4)">4</button>
+            <button class="btn_click" onclick="inserir(5)">5</button>
+            <button class="btn_click" onclick="inserir(6)">6</button>
+            <button class="btn_click" onclick="inserir(7)">7</button>
+            <button class="btn_click" onclick="inserir(8)">8</button>
+            <button class="btn_click" onclick="inserir(9)">9</button>
+            <button class="btn_click" id="zero" onclick="inserir(0)">0</button>
+    
+            <div class="teclado_apoio">
+                <button class="btn_apoio" id="branco" onclick="branco()">BRANCO</button>
+                <button class="btn_apoio" id="laranja" onclick="corrige()">CORRIGE</button>
+                <button class="btn_apoio" id="verde" onclick="votar()">CONFIRMA</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>DESENVOLVIDO POR SARAH NOGUEIRA</p>
+    </footer>
+</body>
+</html>
